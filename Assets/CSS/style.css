@@ -63,6 +63,15 @@ html {
     width: 95px;
 }
 
+a {
+    text-decoration: none;
+    color:white;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 /* Info shown in tooltip */
 span[data-tooltip] {
     text-decoration: none;
@@ -271,97 +280,6 @@ h3 {
 }
 
 
-a {
-    text-decoration: none;
-    color:white;
-    font-family: sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-.FM-content {
-    margin-right: 5vw; /* A percentage of the full viewport width. */
-    margin-left: 5vw;
-}
-
-.text-content{
-    margin-right: 20vw;
-    margin-left: 20vw;
-    text-align: center;
-}
-
-.FM-h1 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 100px;
-    color: #ffc4a2;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-    margin-bottom: 20px;
-}
-
-.FM-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.6em;
-    letter-spacing: 0em;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.main-image {
-    justify-content: center;
-}
-
-.large-FM-image {
-    height: 600px;
-    background: url(../images/main-FM-image.jpg) no-repeat center / cover;
-    border-radius: 8px;
-    border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
-    margin-bottom: 40px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    justify-content: center;
-}
-
-.FM-flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 15px;
-    margin-top: 20px;
-    margin-right: 5vw;
-    justify-content: center;
-   
-}
-
-.image-1 {
-    background: url(../images/image-1.png) center / cover;
-
-}
-
-.image-2 {
-    background: url(../images/image-2.png) center / cover;
-
-}
-.image-3 {
-    background: url(../images/image-3.png) center / cover;
-}
-
-.image-1, .image-2, .image-3 {
-    height: 520px;
-    border: 0.05px solid rgb(94, 94, 94);
-    border-radius: 12px;
-    width: 400px;
-}
-
-
-
 footer {
     width: auto;
     margin-top: 150px;
@@ -449,18 +367,11 @@ footer {
         flex-basis: 38%;
     }
 
-    .FM-h1 {
-     font-size: 60px;
-    }
   
     .footer-links {
         gap: 150px;
     }
 
-    .text-content {
-        margin-right: 10vw;
-        margin-left: 10vw;
-    }
 
 /* Tablets & Large Smartphones */
 @media screen and (max-width: 768px) {
@@ -583,20 +494,6 @@ footer {
     .p-c-box, .nike-box, .BLM-box, .MVMNT-box, .meraki-box, .jacquemus-box {
         height: 450px;
         width: 364px;
-    }
-
-    .FM-h1 {
-        font-size: 48px;
-    }
-
-    .text-content {
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-
-    .large-FM-image {
-        margin-left: 20vw;
-        margin-right: 20vw;
     }
 
     .footer-links {
@@ -726,15 +623,6 @@ footer {
         height: 450px;
         width: 364px;
     }   
-
-    .text-content {
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-
-    .FM-h1 {
-        font-size: 48px;
-    }
 
     .footer-links {
         gap: 66px;
