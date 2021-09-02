@@ -9,7 +9,7 @@
 ## Installation
 1. Clone the repository 
 ```bash
-git clone git@github.com:LexMastro/AM-portfolio-build.git
+git clone git@github.com:LexMastro/AM-portfolio.git
 ```
 2. Open `index.html` in web browser 
  
