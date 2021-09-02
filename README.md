@@ -15,7 +15,7 @@ git clone git@github.com:LexMastro/AM-portfolio-build.git
  
 
 ## Examples
-![Image of website](assets/images/full-page.png)
+![Image of website](Assets/images/full-page.png)
 
 ## License 
 This project is licensed under the [MIT License](LICENSE)
