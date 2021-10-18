@@ -3,11 +3,7 @@
 ## Description
 * A portfolio page to showcase my skills & talents for future employers to view.
 
-* The portfolio includes Contact links, about me section & projects section.
-
-* I have created a flex-box section with the projects. I thought this was quite fidgety & didn't work at times - though I think I figured it out.
-
-* 
+* The portfolio includes contact link, about me section & section with deployed links to projects.
 
 
 ## Installation
@@ -17,6 +13,10 @@ git clone git@github.com:LexMastro/AM-portfolio.git
 ```
 2. Open `index.html` in web browser 
  
+
+## Deployed Site Link
+https://lexmastro.github.io/AM-portfolio/
+
 
 ## Examples
 ![Image of website](Assets/images/full-page.png)
