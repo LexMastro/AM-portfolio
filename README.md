@@ -5,6 +5,10 @@
 
 * The portfolio includes Contact links, about me section & projects section.
 
+* I have created a flex-box section with the projects. I thought this was quite fidgety & didn't work at times - though I think I figured it out.
+
+* 
+
 
 ## Installation
 1. Clone the repository 

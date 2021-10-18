@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Allows to include the padding and border in an element's total width and height. */
 *, :before, :after {
     box-sizing: border-box;
 }
@@ -15,26 +11,31 @@
 /* CSS properties for all HTML */
 html {
         max-width: 100%;
-        background:url(../images/Dusk.jpg);
-        background-repeat: no-repeat; /* Repeat background image if not large enough to fill entire html */
+        background-color: #6a93cb;
+        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);;
         background-size: cover;
     }
     
 .header-section {
-    display: flex; /* Structure section in a flex box */
-    justify-content: space-between; /* Space between contents */
-    align-items: center; /* Align items in center of section */
-    padding: 40px 3%; /* top and bottom padding are 40px right and left padding are 3% */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px 3%; 
 }
 
 .mobile-logo-img {
-    display: none; /* Image will not show unless view port changes to specified pixels */
+    display: none; 
+}
+
+.header-h1 {
+    font-size: 40px;
+    color: #023fe0;
 }
 
 .nav-links {
-        list-style: none; /* Removes bullet points */
+        list-style: none; 
         display: flex; 
-        flex-direction: row; /* Places items in flex box in a row */
+        flex-direction: row; 
         align-items: center;
     }
 
@@ -42,32 +43,31 @@ html {
         padding: 20px;
     }
 
-
 .nav-links li a {
-    transition: all 0.3 ease 0s; /* Transition time for links to chnage colour on hover */
-    text-decoration: none; /* Removes underline from links */
+    transition: all 0.3 ease 0s; 
+    text-decoration: none; 
 }
 
-/* Change colour of links on hover*/
 .nav-links li a:hover {
-   color:black; 
+   color:white;
 }
 
 .contact-button {
     padding: 9px 25px;
-    background-color: wheat; /* Colour of button */
-    border-radius: 30px; /* Round corners of button */
+    background-color: #023fe0;
+    border-radius: 30px; 
     border: none;
     transition: all 0.3 ease 0s;
     margin-left: 25px;
-    width: 95px;
+    width: 110px;
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color:white;
-    font-family: sans-serif;
-    font-size: 16px;
+    color: #023fe0;
+    font-family: 'Didot', serif;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -78,57 +78,49 @@ span[data-tooltip] {
     cursor: pointer; 
     position: relative;
     font-family: 'Source Sans Pro', serif;
-    font-weight: 600;
-    color: grey;
-    font-size: 14px;
-  
+    color: white;
+    font-size: 16px;
   }
 
-  /* Tool tip shown on hover of contact button */
+span[data-tooltip]:hover {
+    color: #023fe0;
+    font-weight: 600;
+  }
+
 span[data-tooltip]:hover::after{
     text-decoration: underline;
     content:attr(data-tooltip);
     position:inherit;
-    background-color: #ffc4a2;;
+    background-color: white;
     padding: 20px;
     border-radius: 6px;
-    left: -165px;
+    left: -185px;
     top: 50px;
-    color: black;
-    border: 1px #fcfcfc solid;
+    color: #023fe0;
+    border: 1px #023fe0 solid;
     text-align: center;
   }
 
-  /* On hover of contact button change background colour to ... */
 button:hover {
-    background-color: #ffc4a2;;
+    background-color: #ffffff;
 }
 
-/* Main text heading */
 .main-h1 {
     text-align: center;
     margin-top: 200px;
     font-size: 300px;
-    color: #ffc4a2;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
+    color:  #023fe0;
     margin-bottom: 200px;
 }
 
 
 #about-me {
-    min-height: 80vh; /* contents of section take up 80% of page */
+    min-height: 80vh; 
     width: 100%;
     display: flex;
     align-items:center;
     justify-content: center;
-   
 }
-
-.about-me-content {
-    display: flex;
-}
-
 
 .about-me-container {
     width: 100%;
@@ -144,7 +136,7 @@ button:hover {
     font-family: 'Didot', 'serif';
     font-weight: lighter;
     line-height: 55px;
-    color: #ffffff;
+    color: #023fe0;
     padding-right: 20px;
 }
 
@@ -155,7 +147,7 @@ button:hover {
     justify-content: center;
     border-radius: 8px;
     margin: 80px 0 0 0px;
-    z-index: 1; /* specifies the stack order of an element. */
+    z-index: 1; 
     position: relative;
     display: inline-block;
     line-height: 1;
@@ -177,112 +169,58 @@ button:hover {
 }
 
 .about-me-img:hover {
-    border-radius: 360px / 500px; /* On hover change border radius */
+    border-radius: 360px / 500px;
 }
 
 main {
     position: relative; 
-    min-height: 100vh; 
+    min-height: 80vh; 
     max-width: fit-content;
 }
 
-.projects-header {
-    display: flex;
-    flex-direction: column;
+#projects-body {
+    margin: 0 auto;
 }
 
 .projects-h2-heading {
-    margin: 120px 0 40px 0;
+    margin: 200px 0 100px 0;
 }
 
 .projects-h2 {
     font-size: 100px;
     text-align: center;
-    color: #ffc4a2;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
+    color: #023fe0;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
-    gap: 45px; /* Input a gap between sections */
     flex-wrap: wrap;
-    align-items: auto;
-    justify-content: center; 
-    margin-top: 20px;
-}
-
-.main-large-flexbox {
-    margin: 0 auto;
     justify-content: center;
-    align-items: center;
-    padding: 30px 0px 20px 0px;
-    width: 80%;
+    gap: 80px; 
+    padding: 10px;
+    margin: 20px;
 }
 
-.large-flexbox {
-    height: 600px;
-    background: url(../images/main-flexbox-img.png) no-repeat center / cover;
-    border-radius: 8px;
-    border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
-
-}
-.large-flexbox h3 {
-    font-size: 55px;
-}
 
 h3 {
-    font-family: 'Source Sans Pro' sans-serif;
-    font-size: 35px;
-    margin-left: -55px;
-    color: #fff;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: #000;
-    margin-top: -50px;
+    font-family: 'Didot', serif;
+    font-size: 30px;
+    color:#023fe0;
     padding: 5px;
     transform: rotate(-5deg);
 }
 
 .nike-box, .p-c-box, .BLM-box, .meraki-box, .MVMNT-box, .jacquemus-box {
-    height: 450px;
-    border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
-    border-radius: 12px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 420px;
-}
-
-.nike-box {
-    background: url(../images/Nike.png) center / cover;
-}
-
-.p-c-box {
-    background: url(../images/P&C.png) center / cover;
-}
-
-.BLM-box {
-    background: url(../images/BLM.png) center / cover;
-}
-
-.meraki-box {
-    background: url(../images/meraki.png) center / cover;
-}
-
-.MVMNT-box {
-    background: url(../images/MVMNT.png) center / cover;
-}
-
-.jacquemus-box {
-    background: url(../images/jacquemus.png) center / cover;
+    height: 45px;
+    width: 350px;
+    margin: 20px;
 }
 
 
 footer {
     width: auto;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .footer-box {
@@ -297,14 +235,14 @@ footer {
     padding: 0px 25px;
     display: flex;
     width: auto;
-    gap: 300px;
+    gap: 150px;
     align-items: center;
 }
 
 .footer-links li a {
     transition: all 0.3 ease 0s;
     text-decoration: none;
-    color: white;
+    color:#023fe0;
     display: inline-block;
 }
 
@@ -312,11 +250,10 @@ footer {
 @media screen and (max-width: 992px) {
     .header-section {
         display: flex;
-        justify-content: space-evenly;
     }
 
     .nav-links {
-        margin-right: 30px;
+        margin-right: 0;
     }
   
     .nav-links li {
@@ -330,7 +267,10 @@ footer {
 
     .contact-button {
         margin-left: 0px;
-        margin-right: 40px;
+    }
+
+    .header-h1 {
+        font-size: 25px;
     }
 
     .main-h1 {
@@ -363,13 +303,14 @@ footer {
         margin: -55px 90px 40px 190px;
     }
 
-    .nike-box, .p-c-box, .BLM-box, .meraki-box, .MVMNT-box, .jacquemus-box {
-        flex-basis: 38%;
-    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }  
 
-  
     .footer-links {
-        gap: 150px;
+        gap: 75px;
     }
 
 
@@ -401,7 +342,6 @@ footer {
     
     .nav-links li {
         display: inline-block;
-        padding: 10px 46px;
     }
     
     .nav-links li a {
@@ -418,7 +358,11 @@ footer {
     }
 
     #projects-body {
-        max-width: none;
+        margin: 0 auto;
+    }
+
+    .header-h1 {
+        display: none;
     }
 
     .main-h1 {
@@ -440,9 +384,7 @@ footer {
     .about-me-text h2 {
         font-size: 22px;
         font-family: 'Didot', 'serif';
-        font-weight: lighter;
         line-height: 30px;
-        color: #ffffff;
         text-align: center;
         margin: 0 22px;
     }
@@ -454,11 +396,11 @@ footer {
     .about-me-img {
         width: 300px;
         height: 450px;
-        margin: -0px 90px 40px 195px;    
+        margin-top: -45px; 
     }
 
     .projects-h2-heading {
-        margin: 80px 0 40px 0;
+        margin: 80px 0 80px 0;
     }
 
     .projects-h2 {
@@ -476,8 +418,6 @@ footer {
     h3 {
         font-size: 28px;
         margin-left: -50px;
-        -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: grey;
         margin-top: -30px;
     }
 
@@ -486,18 +426,22 @@ footer {
     }
 
     .flex-container {
-        display: grid;
-        gap: 30px;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-left: 150px;
     }   
 
-    .p-c-box, .nike-box, .BLM-box, .MVMNT-box, .meraki-box, .jacquemus-box {
-        height: 450px;
-        width: 364px;
-    }
 
     .footer-links {
-        gap: 66px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -546,7 +490,7 @@ footer {
     }
 
     #projects-body {
-        max-width: none;
+        margin: 0 auto;
     }
 
     .main-h1 {
@@ -597,35 +541,14 @@ footer {
         width: 360px;
     }
 
-    .main-h3 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 28px;
-        margin-left: -50px;
-        -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: grey;
-        margin-top: -30px;
-    }
-
-    .large-flexbox {
-        height: 470px;
-    }
-
     .flex-container {
-        display: grid;
-        gap: 30px;
-        justify-items: center;
-    }
-
-    .p-c-box, .nike-box, .BLM-box, .MVMNT-box, .meraki-box, .jacquemus-box {
-        height: 450px;
-        width: 364px;
-    }   
-
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+    }  
+  
     .footer-links {
-        gap: 66px;
+        gap: 30px
     }
     
 }}
