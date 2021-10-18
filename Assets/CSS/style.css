@@ -211,7 +211,7 @@ h3 {
     transform: rotate(-5deg);
 }
 
-.nike-box, .p-c-box, .BLM-box, .meraki-box, .MVMNT-box, .jacquemus-box {
+.project-link {
     height: 45px;
     width: 350px;
     margin: 20px;
@@ -405,14 +405,6 @@ footer {
 
     .projects-h2 {
         font-size: 80px; 
-    }
-
-    .main-large-flexbox {
-        width: 550px;
-    }
-
-    .main-h3 {
-        font-size: 40px;
     }
 
     h3 {
