@@ -223,21 +223,18 @@ h3 {
     background: url(../images/LettuceEat.jpg) center / cover ;
     height: 400px;
     border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
     border-radius: 12px;
 }
 .project-link-2:hover {
     background: url(../images/quiz.png) center / cover ;
     height: 400px;
     border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
     border-radius: 12px;
 }
 .project-link-3:hover {
     background: url(../images/weather.png) center / cover ;
     height: 400px;
     border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
     border-radius: 12px;
 }
 .project-link-4:hover {
@@ -251,23 +248,18 @@ h3 {
     background: url(../images/password.png) center / cover ;
     height: 400px;
     border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
     border-radius: 12px;
 }
 .project-link-6:hover {
     background: url(../images/horiseon.png) center / cover ;
     height: 400px;
     border: 0.05px solid rgb(94, 94, 94);
-    padding: 30px;
     border-radius: 12px;
 }
 
 .box-heading:hover {
     margin-top: -90px;
-    font-size: 25px;
 }
-
-
 
 
 footer {
