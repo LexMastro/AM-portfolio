@@ -205,6 +205,7 @@ main {
     gap: 80px; 
     padding: 10px;
     margin: 20px;
+    max-width: 1400px;
 }
 .view-all-projects-btn {
 
@@ -214,6 +215,9 @@ main {
 
 .btn-primary {
     margin: auto;
+    color: #fff;
+    background-color: #92b4e6;
+    border-color: #1371fc;
 }
 
 h3 {
@@ -224,11 +228,6 @@ h3 {
     transform: rotate(-5deg);
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #92b4e6;
-    border-color: #1371fc;
-}
 
 
 footer {
