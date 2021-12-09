@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Display Meta Title & Favicon Image -->
   <link rel="icon" href="./Assets/images/favicon.ico" type="image/x-icon">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./Assets/CSS/style.css">
   <title>AM Portfolio</title>
 </head>
 <!-- Content of Html -->
+
 <body>
   <!-- Logo image & Navagation Bar -->
   <header>
     <div class="header-section">
-      <a href="index.html"><h1 class="header-h1">Alexis Mastrodomenico</h1></a>
-           <!-- Change logo image for media queries -->
-          <a href="index.html"><img class="mobile-logo-img" src="./Assets/images/Mobile-logo-img.png" alt="Alexis Mastrodomenico Logo"
-            width="100" height="100"></a>
-        <nav class="nav-bar">
-          <ul class="nav-links">
-            <li><a href="#about-me" class="about">About</a></li>
-            <li><a href="#projects-body" class="projects">Projects</a></li>
-            <li><a href="./Assets/Resume.pdf" download="newfilename">Resume</a></li>
-            <a class="contact" href="mailto:mastroalexis@gmail.com"><button class="contact-button"><span data-tooltip="mastroalexis@gmail.com">Contact</span></button></a>
-          </ul>
-        </nav>
+      <a href="index.html">
+        <h1 class="header-h1">Alexis Mastrodomenico</h1>
+      </a>
+      <!-- Change logo image for media queries -->
+      <a href="index.html"><img class="mobile-logo-img" src="./Assets/images/Mobile-logo-img.png"
+          alt="Alexis Mastrodomenico Logo" width="100" height="100"></a>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li><a href="#about-me" class="about">About</a></li>
+          <li><a href="#projects-body" class="projects">Projects</a></li>
+          <li><a href="./Assets/Resume.pdf" download="newfilename">Resume</a></li>
+          <a class="contact" href="mailto:mastroalexis@gmail.com"><button class="contact-button"><span
+                data-tooltip="mastroalexis@gmail.com">Contact</span></button></a>
+        </ul>
+      </nav>
     </div>
     <section class="h1">
       <h1 class="main-h1">Port<em>folio</em></h1>
@@ -48,47 +56,46 @@
       </div>
     </div>
   </section>
-      <!-- Projects section -->
+  <!-- Projects section -->
   <main id="projects-body">
     <section class="projects-header">
       <div class="projects-h2-heading">
         <h2 class="projects-h2">Projects</h2>
       </div>
-       <!-- Projects -->
-    <section class="flex-container">
-      <section class="project-link-1">
-        <a href="https://eat.watsonised.com/">
-        <h3 class="box-heading">(1) Lettuce Eat</h3>
-      </a>
+      <!-- Projects -->
+      <section class="flex-container">
+        <div class="card" style="width: 22rem;">
+          <img src="./Assets/images/LettuecEat.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">(1) Lettuce Eat</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://eat.watsonised.com/" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <img src="./Assets/images/beautyboard.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">(2) Beauty Board</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+              of the card's
+              content.</p>
+            <a href="https://mighty-reef-26126.herokuapp.com/" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <img src="./Assets/images/weather.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">(3) Weather Dashboard</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://lexmastro.github.io/weather-dashboard/" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
       </section>
-      <section class="project-link-2">
-        <a href="https://lexmastro.github.io/coding-quiz/">
-        <h3 class="box-heading">(2) Online Coding Quiz</h3>
-        </a>
-      </section>
-      <section class="project-link-3">
-        <a href="https://lexmastro.github.io/weather-dashboard/">
-        <h3 class="box-heading">(3) Weather Dashboard</h3>
-        </a>
-      </section>
-      <section class="project-link-4">
-        <a href="https://lexmastro.github.io/workday-scheduler/">
-        <h3 class="box-heading">(4) Workday Scheduler</h3>
-
-        </a>
-      </section>
-      <section class="project-link-5">
-        <a href="https://lexmastro.github.io/password-generator/Develop/">
-        <h3 class="box-heading">(5) Password Generator</h3>
-        </a>
-      </section>
-      <section class="project-link-6">
-        <a href="https://lexmastro.github.io/homework-week1/">
-        <h3 class="box-heading">(6) Horiseon Site</h3>
-        </a>
-      </section>
-    </section>
-    </section>
+      <div class="view-all-projects-btn">
+        <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+      </div>
   </main>
   <!-- Footer section -->
   <footer>
@@ -96,11 +103,13 @@
       <ul class="footer-links">
         <li><a href="mailto:mastroalexis@gmail.com" class="Contact">Contact</a></li>
         <li><a href="https://github.com/LexMastro/" class="Github">GitHub</a></li>
-        <li><a href="index.html"><img class="footer-img" src="./Assets/images/footer-img.png" alt="Footer Logo" width="140" height="140"></a></li>
+        <li><a href="index.html"><img class="footer-img" src="./Assets/images/footer-img.png" alt="Footer Logo"
+              width="140" height="140"></a></li>
         <li><a href="https://www.linkedin.com/in/alexis-mastro-852515223/" class="Linkedin">Linkedin</a></li>
         <li><a href="https://www.instagram.com/lexmastro_/" class="Instagram">Social</a></li>
       </ul>
     </div>
   </footer>
 </body>
+
 </html>
