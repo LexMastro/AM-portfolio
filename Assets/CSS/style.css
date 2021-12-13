@@ -133,7 +133,7 @@ button:hover {
 }
 
 .about-me-text h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Didot', 'serif';
     font-weight: lighter;
     line-height: 55px;
@@ -142,12 +142,12 @@ button:hover {
 }
 
 .about-me-text {
-    width: 100%;
+    width: 60%;
     min-height: 300px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    margin: 80px 0 0 0px;
+    margin: 80px 50px 0 0px;
     z-index: 1; 
     position: relative;
     display: inline-block;
@@ -162,7 +162,7 @@ button:hover {
 .about-me-img {
     width: 100%;
     height: 550px;
-    background: url(../images/about-me-img.jpg) no-repeat center / cover; 
+    background: url(../images/IMG_1954.png) no-repeat center / cover; 
     border-radius: 40px;
     border: 0.05px solid rgb(94, 94, 94);
     transform: rotate(-3deg); 
@@ -170,7 +170,7 @@ button:hover {
 }
 
 .about-me-img:hover {
-    border-radius: 360px / 500px;
+    border-radius: 400px / 500px;
 }
 
 main {
@@ -227,7 +227,6 @@ h3 {
     padding: 5px;
     transform: rotate(-5deg);
 }
-
 
 
 footer {
@@ -289,9 +288,8 @@ footer {
         font-size: 200px;
     }
 
-    .about-me-container {
-        width: 100%;
-        display: block;
+    #about-me {
+        flex-direction: column;
     }
 
     .about-me-text {
@@ -299,10 +297,10 @@ footer {
     }
 
     .about-me-text h2 {
-        font-size: 35px;
-        line-height: 60px;
-        text-align: center;
-        margin: 0 30px;
+        font-size: 25px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 auto;
     }
 
     .about-me-img-container {
@@ -310,9 +308,9 @@ footer {
     }
 
     .about-me-img {
-        width: 620;
-        height: 700px;
-        margin: -55px 90px 40px 190px;
+        width: 450px;
+        height: 400px;
+        margin: 0 auto;
     }
 
     .flex-container {
@@ -385,10 +383,9 @@ footer {
         margin-bottom: 120px;
     }
 
-    .about-me-container {
-        width: 100%;
-        display: block;
-    }
+   #about-me {
+    flex-direction: column;
+   }
 
     .about-me-text {
         min-height: 100px;
@@ -500,13 +497,18 @@ footer {
         margin-bottom: 120px;
     }
 
-    .about-me-container {
-        width: 100%;
-        display: block;
+    #about-me {
+        display: flex;
+        flex-direction: column;
     }
+
 
     .about-me-text {
         margin: 0;
+    }
+
+    .aboutme-h2 {
+            width: 100%;
     }
     
     .about-me-text h2 {
