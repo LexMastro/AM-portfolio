@@ -147,7 +147,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    margin: 80px 50px 0 0px;
+    margin: 50px;
     z-index: 1; 
     position: relative;
     display: inline-block;
@@ -166,7 +166,7 @@ button:hover {
     border-radius: 40px;
     border: 0.05px solid rgb(94, 94, 94);
     transform: rotate(-3deg); 
-    margin-left: -55px;  
+    margin-left: -150px;  
 }
 
 .about-me-img:hover {
